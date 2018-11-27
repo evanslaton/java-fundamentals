@@ -58,17 +58,23 @@ public class Main {
   public static void clock() {
     LocalDateTime now = LocalDateTime.now();
     int secondToCompareTo = now.getSecond();
+    float i = 0f;
 
     while (true) {
+      i++;
+
       now = LocalDateTime.now();
       int hour = now.getHour();
       int minute = now.getMinute();
       int second = now.getSecond();
 
       if (secondToCompareTo != second) {
-        System.out.println(hour + ":" + minute + ":" + second);
+        System.out.println(hour + ":" + minute + ":" + second + " " + i/1000000 + " MHz");
         secondToCompareTo = second;
+        i = 0;
       }
+
+    
     }
   }
 }
