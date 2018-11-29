@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1968e0f-9d9e-4788-bf13-78127ceb827b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" afterDir="false" />
+    <list default="true" id="e3e3e250-8a8f-4d07-aa3a-2c914ce47ddf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__com_google_guava_guava_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/resources/gates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/src/main/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/src/test/java/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/Library.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -26,11 +43,12 @@
     </projectState>
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="240390439">
+    <session id="-1525715555">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="3" />
         </counts>
@@ -38,42 +56,41 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="3" />
-          <entry key="js" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="3" />
-          <entry key="JavaScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2218" />
+          <entry key="java" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2218" />
+          <entry key="JAVA" value="39" />
         </counts>
       </usages-collector>
     </session>
-    <session id="2006329023">
+    <session id="241357269">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="104" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="104" />
+          <entry key="JAVA" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,11 +107,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../src/main/java/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+              <folding>
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#3044#3045#0" expanded="true" />
+                <element signature="e#3098#3099#0" expanded="true" />
+                <element signature="e#3219#3220#0" expanded="true" />
+                <element signature="e#3273#3274#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../src/test/java/LibraryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#1530#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,14 +159,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="linter" />
+              <option name="name" value="basicLibrary" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="linter" />
+                <option name="name" value="basicLibrary" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
@@ -138,14 +175,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="linter" />
+              <option name="name" value="basicLibrary" />
               <option name="path" value="$PROJECT_DIR$/.." />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="linter" />
+                <option name="name" value="basicLibrary" />
                 <option name="path" value="$PROJECT_DIR$/.." />
               </ExternalProjectPojo>
             </list>
@@ -159,7 +196,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'linter'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'basicLibrary'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -169,7 +206,7 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'linter'." />
+                <option name="description" value="Displays the sub-projects of root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -179,19 +216,14 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'linter'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'basicLibrary'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'linter'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a JVM application" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
-                <option name="name" value="run" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files." />
@@ -209,24 +241,14 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
-                <option name="name" value="startScripts" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'linter'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'basicLibrary'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the project as a distribution as-is." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
-                <option name="name" value="installDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
@@ -234,14 +256,9 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'linter'." />
+                <option name="description" value="Displays the tasks runnable from root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the main distributions" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
-                <option name="name" value="assembleDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build." />
@@ -259,7 +276,7 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'linter'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -284,7 +301,7 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'linter'." />
+                <option name="description" value="Displays all dependencies declared in root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -309,17 +326,7 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
-                <option name="name" value="distTar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
-                <option name="name" value="distZip" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'linter'." />
+                <option name="description" value="Displays the properties of root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/.." />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -330,7 +337,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'linter'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'basicLibrary'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -340,7 +347,7 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'linter'." />
+                <option name="description" value="Displays the sub-projects of root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -350,19 +357,14 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'linter'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'basicLibrary'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'linter'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a JVM application" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="run" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files." />
@@ -380,24 +382,14 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="startScripts" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'linter'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'basicLibrary'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the project as a distribution as-is." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="installDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
@@ -405,14 +397,9 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'linter'." />
+                <option name="description" value="Displays the tasks runnable from root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the main distributions" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build." />
@@ -430,7 +417,7 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'linter'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -455,7 +442,7 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'linter'." />
+                <option name="description" value="Displays all dependencies declared in root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -480,17 +467,7 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="distTar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="distZip" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'linter'." />
+                <option name="description" value="Displays the properties of root project 'basicLibrary'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -501,15 +478,15 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/../.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/../build.gradle" value="474392886" />
-        <entry key="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" value="307973072" />
-        <entry key="$PROJECT_DIR$" value="6174036291827" />
+        <entry key="$PROJECT_DIR$" value="6173727653779" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="474392886" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1472778929" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="307973072" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="1028628326" />
-        <entry key="$PROJECT_DIR$/../settings.gradle" value="1028628326" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="645548740" />
+        <entry key="$PROJECT_DIR$/../.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/../build.gradle" value="1472778929" />
+        <entry key="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" value="307973072" />
+        <entry key="$PROJECT_DIR$/../settings.gradle" value="645548740" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -528,7 +505,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="linter" />
+              <option name="name" value="basicLibrary" />
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
@@ -546,7 +523,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="linter" />
+              <option name="name" value="basicLibrary" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-bin/cghg6c4gf4vkiutgsab8yrnwv/gradle-4.10.2/lib/ant-1.9.11.jar" />
@@ -636,28 +613,24 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="PREVIEW" />
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-        <entry key="$PROJECT_DIR$/../../../java-workflow" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../java-workflow" value="PREVIEW" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/gates.js" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
-        <option value="$PROJECT_DIR$/../src/test/java/AppTest.java" />
-        <option value="$PROJECT_DIR$/../src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Library.java" />
+        <option value="$PROJECT_DIR$/../src/main/java/Library.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="372" />
-    <option name="y" value="697" />
-    <option name="width" value="933" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -665,55 +638,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="linter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="linter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="linter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="linter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="linter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="linter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="linter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="linter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="linter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="linter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543518403139" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543518669494" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../linter" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -728,32 +670,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="linter_main" />
+  <component name="RunManager" selected="JUnit.LibraryTest">
+    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basicLibrary_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibraryTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testPrintMaxMinAbsentValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="linter_test" />
+    <configuration name="LibraryTest.testSomeLibraryMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basicLibrary_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AppTest" />
-      <option name="METHOD_NAME" value="testPrintMaxMinAbsentValues" />
+      <option name="MAIN_CLASS_NAME" value="LibraryTest" />
+      <option name="METHOD_NAME" value="testSomeLibraryMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.AppTest.testPrintMaxMinAbsentValues" />
+      <item itemvalue="JUnit.LibraryTest.testSomeLibraryMethod" />
+      <item itemvalue="JUnit.LibraryTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.AppTest.testPrintMaxMinAbsentValues" />
+        <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.testSomeLibraryMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -762,23 +705,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1968e0f-9d9e-4788-bf13-78127ceb827b" name="Default Changelist" comment="" />
-      <created>1543509432945</created>
+      <changelist id="e3e3e250-8a8f-4d07-aa3a-2c914ce47ddf" name="Default Changelist" comment="" />
+      <created>1543457169969</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543509432945</updated>
+      <updated>1543457169969</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_testPrintMaxMinAbsentValues - 2018.11.29 at 10h 30m 35s.xml">
-      <configuration name="AppTest.testPrintMaxMinAbsentValues" configurationId="JUnit" />
+    <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.11.29 at 08h 27m 42s.xml">
+      <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2018.11.29 at 10h 48m 19s.xml">
+      <configuration name="LibraryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2018.11.29 at 10h 54m 54s.xml">
+      <configuration name="LibraryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2018.11.29 at 11h 08m 05s.xml">
+      <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="248" y="465" width="622" height="688" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.430605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12793522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -787,16 +739,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2758007" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.09430605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.2669039" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3291815" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -808,20 +760,39 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../resources/gates.js" />
-    <entry file="file://$PROJECT_DIR$/../src/test/java/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/App.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="291">
+          <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+          <folding>
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3098#3099#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3273#3274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linter/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/LibraryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#1530#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

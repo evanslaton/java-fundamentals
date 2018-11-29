@@ -5,96 +5,74 @@ import java.util.*;
  */
 public class App {
     public static void main(String[] args) {
-//        int[][] weeklyMonthTemperatures = {
-//                {66, 64, 58, 65, 71, 57, 60},
-//                {57, 65, 65, 70, 72, 65, 51},
-//                {55, 54, 60, 53, 59, 57, 61},
-//                {65, 56, 55, 52, 55, 62, 57}
-//        };
-//        printMaxMinAbsentValues(weeklyMonthTemperatures);
-//        System.out.println(findMaximumValue(getUniqueValues(weeklyMonthTemperatures)));
-//        System.out.println(findMinimumValue(getUniqueValues(weeklyMonthTemperatures)));
-
-//        List<String> votes = new ArrayList<>();
-//        votes.add("Bush");
-//        votes.add("Bush");
-//        votes.add("Bush");
-//        votes.add("Shrub");
-//        votes.add("Hedge");
-//        votes.add("Shrub");
-//        votes.add("Bush");
-//        votes.add("Hedge");
-//        votes.add("Bush");
-//        tally(votes);
-
 
     }
-
-    // Prints the maximum, minimum and absent values between the minimum and maximum from a HashSet
-    public static void printMaxMinAbsentValues(int[][] twoDimensionalArray) {
-        HashSet<Integer> uniqueIntegers = getUniqueValues(twoDimensionalArray);
-        int maximumValue = findMaximumValue(uniqueIntegers);
-        int minimumValue = findMinimumValue(uniqueIntegers);
-
-        System.out.println("Low: " + maximumValue);
-        System.out.println("High: " + minimumValue);
-
-        for (int i = minimumValue; i <= maximumValue; i++) {
-            if (!uniqueIntegers.contains(i)) {
-                System.out.println("Never saw temperature: " + i);
-            }
-        }
-    }
-
-    // Returns all unique Integers from a 2d array in a HashSet
-    public static HashSet<Integer> getUniqueValues(int[][] twoDimensionalArray) {
-        HashSet<Integer> uniqueIntegers = new HashSet();
-        for (int[] arrayOfInts : twoDimensionalArray) {
-            for (int value: arrayOfInts) {
-                if (!uniqueIntegers.contains(value)) {
-                    uniqueIntegers.add(value);
-                }
-            }
-        }
-        return uniqueIntegers;
-    }
-
-    // Returns the maximum value in a HashSet
-    public static int findMinimumValue(HashSet<Integer> uniqueIntegers) {
-        return Collections.min(uniqueIntegers);
-    }
-
-    // Returns the maximum value in a HashSet
-    public static int findMaximumValue(HashSet<Integer> uniqueIntegers) {
-        return Collections.max(uniqueIntegers);
-    }
-
-    // Prints the candidate's name who has the most votes
-    public static void tally(List<String> votes) {
-        HashMap<String, Integer> voteCounts = getVotesForCandidates(votes);
-        Integer mostVotes = 0;
-        Integer candidatesVotes;
-        String winner = "";
-        for (Map.Entry<String, Integer> candidate : voteCounts.entrySet()) {
-            candidatesVotes = candidate.getValue();
-            if (candidatesVotes > mostVotes) {
-                mostVotes = candidatesVotes;
-                winner = candidate.getKey();
-            }
-        }
-        System.out.println(winner + " received the most votes!");
-    }
-
-    // Returns a HashMap containing the candidates and their vote tallies
-    public static HashMap<String, Integer> getVotesForCandidates(List<String> votes) {
-        HashMap<String, Integer> candidatesAndVotes =  new HashMap<>();
-        for (String candidate : votes) {
-            if (!candidatesAndVotes.containsKey(candidate)) {
-                candidatesAndVotes.put(candidate, 1);
-            } else {
-                candidatesAndVotes.put(candidate, candidatesAndVotes.get(candidate) + 1);
-            }
-        }
-        return candidatesAndVotes;
-    }
+//
+//    // Prints the maximum, minimum and absent values between the minimum and maximum from a HashSet
+//    public static void printMaxMinAbsentValues(int[][] twoDimensionalArray) {
+//        HashSet<Integer> uniqueIntegers = getUniqueValues(twoDimensionalArray);
+//        int maximumValue = findMaximumValue(uniqueIntegers);
+//        int minimumValue = findMinimumValue(uniqueIntegers);
+//
+//        System.out.println("Low: " + maximumValue);
+//        System.out.println("High: " + minimumValue);
+//
+//        for (int i = minimumValue; i <= maximumValue; i++) {
+//            if (!uniqueIntegers.contains(i)) {
+//                System.out.println("Never saw temperature: " + i);
+//            }
+//        }
+//    }
+//
+//    // Returns all unique Integers from a 2d array in a HashSet
+//    public static HashSet<Integer> getUniqueValues(int[][] twoDimensionalArray) {
+//        HashSet<Integer> uniqueIntegers = new HashSet();
+//        for (int[] arrayOfInts : twoDimensionalArray) {
+//            for (int value: arrayOfInts) {
+//                if (!uniqueIntegers.contains(value)) {
+//                    uniqueIntegers.add(value);
+//                }
+//            }
+//        }
+//        return uniqueIntegers;
+//    }
+//
+//    // Returns the maximum value in a HashSet
+//    public static int findMinimumValue(HashSet<Integer> uniqueIntegers) {
+//        return Collections.min(uniqueIntegers);
+//    }
+//
+//    // Returns the maximum value in a HashSet
+//    public static int findMaximumValue(HashSet<Integer> uniqueIntegers) {
+//        return Collections.max(uniqueIntegers);
+//    }
+//
+//    // Prints the candidate's name who has the most votes
+//    public static void tally(List<String> votes) {
+//        HashMap<String, Integer> voteCounts = getVotesForCandidates(votes);
+//        Integer mostVotes = 0;
+//        Integer candidatesVotes;
+//        String winner = "";
+//        for (Map.Entry<String, Integer> candidate : voteCounts.entrySet()) {
+//            candidatesVotes = candidate.getValue();
+//            if (candidatesVotes > mostVotes) {
+//                mostVotes = candidatesVotes;
+//                winner = candidate.getKey();
+//            }
+//        }
+//        System.out.println(winner + " received the most votes!");
+//    }
+//
+//    // Returns a HashMap containing the candidates and their vote tallies
+//    public static HashMap<String, Integer> getVotesForCandidates(List<String> votes) {
+//        HashMap<String, Integer> candidatesAndVotes =  new HashMap<>();
+//        for (String candidate : votes) {
+//            if (!candidatesAndVotes.containsKey(candidate)) {
+//                candidatesAndVotes.put(candidate, 1);
+//            } else {
+//                candidatesAndVotes.put(candidate, candidatesAndVotes.get(candidate) + 1);
+//            }
+//        }
+//        return candidatesAndVotes;
+//    }
 }
