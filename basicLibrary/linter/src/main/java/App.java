@@ -11,24 +11,22 @@ public class App {
 //                {55, 54, 60, 53, 59, 57, 61},
 //                {65, 56, 55, 52, 55, 62, 57}
 //        };
-//
 //        printMaxMinAbsentValues(weeklyMonthTemperatures);
 //        System.out.println(findMaximumValue(getUniqueValues(weeklyMonthTemperatures)));
 //        System.out.println(findMinimumValue(getUniqueValues(weeklyMonthTemperatures)));
 
-        List<String> votes = new ArrayList<>();
-        votes.add("Bush");
-        votes.add("Bush");
-        votes.add("Bush");
-        votes.add("Shrub");
-        votes.add("Hedge");
-        votes.add("Shrub");
-        votes.add("Bush");
-        votes.add("Hedge");
-        votes.add("Bush");
+//        List<String> votes = new ArrayList<>();
+//        votes.add("Bush");
+//        votes.add("Bush");
+//        votes.add("Bush");
+//        votes.add("Shrub");
+//        votes.add("Hedge");
+//        votes.add("Shrub");
+//        votes.add("Bush");
+//        votes.add("Hedge");
+//        votes.add("Bush");
+//        tally(votes);
 
-//        String winner = tally(votes);
-        System.out.println(votes.size());
 
     }
 
@@ -71,13 +69,33 @@ public class App {
         return Collections.max(uniqueIntegers);
     }
 
-    public static String tally(List<String> votes) {
-        HashMap<String, Integer> candidatesAndVoteTally =  new HashMap<>();
-
-        for (String candidate : votes) {
-
+    // Prints the candidate's name who has the most votes
+    public static void tally(List<String> votes) {
+        HashMap<String, Integer> voteCounts = getVotesForCandidates(votes);
+        Integer mostVotes = 0;
+        Integer candidatesVotes;
+        String winner = "";
+        for (Map.Entry<String, Integer> candidate : voteCounts.entrySet()) {
+            candidatesVotes = candidate.getValue();
+            if (candidatesVotes > mostVotes) {
+                mostVotes = candidatesVotes;
+                winner = candidate.getKey();
+            }
         }
-
-        return "placeholder";
+        System.out.println(winner + " received the most votes!");
     }
+
+    // Returns a HashMap containing the candidates and their vote tallies
+    public static HashMap<String, Integer> getVotesForCandidates(List<String> votes) {
+        HashMap<String, Integer> candidatesAndVotes =  new HashMap<>();
+        for (String candidate : votes) {
+            if (!candidatesAndVotes.containsKey(candidate)) {
+                candidatesAndVotes.put(candidate, 1);
+            } else {
+                candidatesAndVotes.put(candidate, candidatesAndVotes.get(candidate) + 1);
+            }
+        }
+        return candidatesAndVotes;
+    }
+
 }
