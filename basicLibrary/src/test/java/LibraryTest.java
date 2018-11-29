@@ -3,7 +3,10 @@
  */
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -42,7 +45,13 @@ public class LibraryTest {
         assertArrayEquals("Arrays should be the same", testArray[2], Library.lowestAverage(testArray));
     }
 
-    @Test public void testGetUniqueValues () {
+    /*************** LAB 03 ***************/
+//    Will eventually test the printed output once I figure out how that's done
+//    @Test public void testPrintMaxMinAbsentValues() {
+//
+//    }
+
+    @Test public void testGetUniqueValues() {
         int[][] testTwoDimensionalArray = {
                 {1, 2, 3, 3, 4, 5, 1},
                 {2, 2, 4, 4, 6, 7, 8},
@@ -59,5 +68,46 @@ public class LibraryTest {
         testHashSet.add(8);
 
         assertEquals("HashSets should be the same", testHashSet, Library.getUniqueValues(testTwoDimensionalArray));
+    }
+
+    @Test public void testFindMinimumValue() {
+        HashSet<Integer> testHashSet = new HashSet();
+        testHashSet.add(1);
+        testHashSet.add(2);
+
+        assertEquals("Should return 1", 1, Library.findMinimumValue(testHashSet));
+    }
+
+    @Test public void testFindMaximumValue() {
+        HashSet<Integer> testHashSet = new HashSet();
+        testHashSet.add(1);
+        testHashSet.add(2);
+
+        assertEquals("Should return 2", 2, Library.findMaximumValue(testHashSet));
+    }
+
+//    Will eventually test the printed output once I figure out how that's done
+//    @Test public void testTally() {
+//
+//    }
+
+    @Test public void testGetVotesForCandidates() {
+        List<String> testArrayList = new ArrayList<>();
+        testArrayList.add("Bush");
+        testArrayList.add("Bush");
+        testArrayList.add("Bush");
+        testArrayList.add("Shrub");
+        testArrayList.add("Hedge");
+        testArrayList.add("Shrub");
+        testArrayList.add("Bush");
+        testArrayList.add("Hedge");
+        testArrayList.add("Bush");
+
+        HashMap<String, Integer> testHashMap = new HashMap<>();
+        testHashMap.put("Hedge", 2);
+        testHashMap.put("Bush", 5);
+        testHashMap.put("Shrub", 2);
+
+        assertEquals("HashMaps should be the same", testHashMap, Library.getVotesForCandidates(testArrayList));
     }
 }
