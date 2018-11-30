@@ -10,7 +10,7 @@ import java.nio.file.Paths;
  */
 public class App {
     public static void main(String[] args) {
-        Path fileToLinter = Paths.get("resources/many-errors.js");
+        Path fileToLinter = Paths.get("resources/gates.js");
         linter(fileToLinter);
     }
 
