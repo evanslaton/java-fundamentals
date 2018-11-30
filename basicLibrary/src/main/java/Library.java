@@ -105,7 +105,7 @@ public class Library {
     }
 
     // Prints the candidate's name who has the most votes
-    public static void tally(List<String> votes) {
+    public static String tally(List<String> votes) {
         HashMap<String, Integer> voteCounts = getVotesForCandidates(votes);
         Integer mostVotes = 0;
         Integer candidatesVotes;
@@ -117,7 +117,9 @@ public class Library {
                 winner = candidate.getKey();
             }
         }
-        System.out.println(winner + " received the most votes!");
+        winner+= " received the most votes!";
+        System.out.println(winner);
+        return winner;
     }
 
     // Helper function that returns a HashMap containing the candidates and their vote tallies

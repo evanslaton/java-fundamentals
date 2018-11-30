@@ -95,10 +95,22 @@ public class LibraryTest {
         assertEquals("Should return 2", 2, Library.findMaximumValue(testHashSet));
     }
 
-//    Will eventually test the printed output once I figure out how that's done
-//    @Test public void testTally() {
-//
-//    }
+    @Test public void testTally() {
+        List<String> testArrayList = new ArrayList<>();
+        testArrayList.add("Bush");
+        testArrayList.add("Bush");
+        testArrayList.add("Bush");
+        testArrayList.add("Shrub");
+        testArrayList.add("Hedge");
+        testArrayList.add("Shrub");
+        testArrayList.add("Bush");
+        testArrayList.add("Hedge");
+        testArrayList.add("Bush");
+
+        String testString = "Bush received the most votes!";
+
+        assertEquals("Strings should be the same", testString, Library.tally(testArrayList));
+    }
 
     @Test public void testGetVotesForCandidates() {
         List<String> testArrayList = new ArrayList<>();

@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/src/main/java/App.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -45,12 +43,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1291" />
+          <entry key="java" value="1473" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1291" />
+          <entry key="JAVA" value="1473" />
         </counts>
       </usages-collector>
     </session>
@@ -61,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="73" selection-end-column="43" />
+              <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="30" />
               <folding>
                 <element signature="e#3687#3688#0" expanded="true" />
                 <element signature="e#3741#3742#0" expanded="true" />
@@ -75,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+            <state relative-caret-position="187">
+              <caret line="100" column="80" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -458,7 +456,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543547739582" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543548563356" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -473,7 +471,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testGetMaxMinAbsentValues">
+  <component name="RunManager" selected="JUnit.LibraryTest">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -531,8 +529,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.testGetMaxMinAbsentValues" />
         <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.testGetMaxMinAbsentValues" />
         <item itemvalue="JUnit.LibraryTest.testGetVotesForCandidates" />
         <item itemvalue="JUnit.LibraryTest.testFindMaximumValue" />
         <item itemvalue="JUnit.LibraryTest.testFindMinimumValue" />
@@ -553,12 +551,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest - 2018.11.29 at 12h 23m 22s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2018.11.29 at 12h 23m 41s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_testFindMinimumValue - 2018.11.29 at 12h 26m 27s.xml">
       <configuration name="LibraryTest.testFindMinimumValue" configurationId="JUnit" />
     </history-entry>
@@ -583,6 +575,12 @@
     <history-entry file="LibraryTest - 2018.11.29 at 18h 51m 52s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibraryTest_testGetMaxMinAbsentValues - 2018.11.29 at 19h 15m 02s.xml">
+      <configuration name="LibraryTest.testGetMaxMinAbsentValues" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testGetMaxMinAbsentValues - 2018.11.29 at 19h 15m 43s.xml">
+      <configuration name="LibraryTest.testGetMaxMinAbsentValues" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1290" height="688" extended-state="0" />
@@ -597,7 +595,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24504505" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -625,7 +623,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="73" selection-end-column="43" />
+          <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="30" />
           <folding>
             <element signature="e#3687#3688#0" expanded="true" />
             <element signature="e#3741#3742#0" expanded="true" />
@@ -637,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        <state relative-caret-position="187">
+          <caret line="100" column="80" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
