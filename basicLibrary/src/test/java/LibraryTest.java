@@ -11,11 +11,6 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
-
     @Test public void testRoll() {
         int n = 10;
         assertEquals("Returned array length should be equal to the n parameter passed in", n, Library.roll(n).length);
@@ -46,10 +41,24 @@ public class LibraryTest {
     }
 
     /*************** LAB 03 ***************/
-//    Will eventually test the printed output once I figure out how that's done
-//    @Test public void testPrintMaxMinAbsentValues() {
-//
-//    }
+    @Test public void testGetMaxMinAbsentValues() {
+        int[][] testTwoDArray = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57},
+        };
+
+        List<String> testArrayList = new ArrayList<>();
+        testArrayList.add("High: 72");
+        testArrayList.add("Low: 51");
+        testArrayList.add("Never saw temperature: 63");
+        testArrayList.add("Never saw temperature: 67");
+        testArrayList.add("Never saw temperature: 68");
+        testArrayList.add("Never saw temperature: 69");
+
+        assertEquals("Array lists should be the same", testArrayList, Library.getMaxMinAbsentValues(testTwoDArray));
+    }
 
     @Test public void testGetUniqueValues() {
         int[][] testTwoDimensionalArray = {
@@ -86,10 +95,22 @@ public class LibraryTest {
         assertEquals("Should return 2", 2, Library.findMaximumValue(testHashSet));
     }
 
-//    Will eventually test the printed output once I figure out how that's done
-//    @Test public void testTally() {
-//
-//    }
+    @Test public void testTally() {
+        List<String> testArrayList = new ArrayList<>();
+        testArrayList.add("Bush");
+        testArrayList.add("Bush");
+        testArrayList.add("Bush");
+        testArrayList.add("Shrub");
+        testArrayList.add("Hedge");
+        testArrayList.add("Shrub");
+        testArrayList.add("Bush");
+        testArrayList.add("Hedge");
+        testArrayList.add("Bush");
+
+        String testString = "Bush received the most votes!";
+
+        assertEquals("Strings should be the same", testString, Library.tally(testArrayList));
+    }
 
     @Test public void testGetVotesForCandidates() {
         List<String> testArrayList = new ArrayList<>();
