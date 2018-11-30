@@ -10,17 +10,15 @@ import java.nio.file.Paths;
  */
 public class App {
     public static void main(String[] args) {
-        Path fileToLinter = Paths.get("resources/gates.js");
-
-
-
+        Path fileToLinter = Paths.get("resources/many-errors.js");
         linter(fileToLinter);
     }
 
     // Prints which lines are missing a semicolon to the console
     // Excludes lines that are empty, end in '{' or '}' and/or contain 'if' and/or 'else'
-    public static void linter(Path fileToLinter) {
+    public static int linter(Path fileToLinter) {
         Charset charset = Charset.forName("US-ASCII");
+        int numberOfErrors = 0;
         try (BufferedReader reader = Files.newBufferedReader(fileToLinter, charset)) {
             String currentLine = "";
             int lineNumber = 0;
@@ -30,15 +28,19 @@ public class App {
                     && !currentLine.endsWith("{")
                     && !currentLine.endsWith("}")
                     && !currentLine.contains("if")
-                    && !currentLine.contains("else"))
+                    && !currentLine.contains("else")
+                    && !currentLine.endsWith(";"))
                 {
                     System.out.println("Line " + lineNumber + " needs a semicolon");
+                    numberOfErrors++;
                 }
                 currentLine = reader.readLine();
                 lineNumber++;
+
             }
         } catch(IOException error) {
             System.out.println(error);
         }
+        return numberOfErrors;
     }
 }
