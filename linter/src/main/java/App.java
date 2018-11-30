@@ -14,9 +14,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-
-
-read();
+        read();
 //        System.out.println(new App().getGreeting());
     }
 
