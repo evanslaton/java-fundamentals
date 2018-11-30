@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bitmap-transformer.iml" filepath="$PROJECT_DIR$/bitmap-transformer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bitmap-transformer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bitmap-transformer_main.iml" group="bitmap-transformer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bitmap-transformer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bitmap-transformer_test.iml" group="bitmap-transformer" />
+    </modules>
+  </component>
+</project>
