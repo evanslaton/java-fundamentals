@@ -5,24 +5,30 @@
 public class App {
     public static void main(String[] args) {
 
-    // Creates new Bitmap using user input
-    Bitmap bitmap = new Bitmap(args[0], args[1]);
+        // Creates new Bitmap using user input
+        Bitmap bitmap = new Bitmap(args[0], args[1]);
 
         // Determines which transform the user wants and calls the appropriate method
         switch (args[2].toLowerCase()) {
-            case "flip-v": bitmap.flipVertically();
+            case "flip-v":
+                bitmap.flipVertically();
+                bitmap.writeBufferedImage();
                 break;
-            case "flip-h": bitmap.flipHorizontally();
+            case "flip-h":
+                bitmap.flipHorizontally();
+                bitmap.writeBufferedImage();
                 break;
-            case "grayscale": bitmap.grayscale();
+            case "grayscale":
+                bitmap.grayscale();
+                bitmap.writeBufferedImage();
                 break;
-            case "darken": bitmap.darken();
+            case "darken":
+                bitmap.darken();
+                bitmap.writeBufferedImage();
                 break;
-            default: System.out.print("Available transforms are \'flip\', \'grayscale\' and \'darken\'");
+            default:
+                System.out.print("Available transforms are \'flip-v\', \'flip-h\', \'grayscale\' and \'darken\'");
                 break;
         }
-
-    // Saves bitmap
-    bitmap.writeBufferedImage();
     }
 }
