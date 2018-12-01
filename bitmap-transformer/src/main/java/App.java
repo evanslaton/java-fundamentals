@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) {
 
     Bitmap bitmap = new Bitmap(args[0], args[1], args[2]);
+    bitmap.grayscale();
     bitmap.writeBufferedImage();
-
     }
 }
