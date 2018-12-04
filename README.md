@@ -1,0 +1,1 @@
+* [Lab 06: Inheritance and Interfaces](readme/inheritance.md)
