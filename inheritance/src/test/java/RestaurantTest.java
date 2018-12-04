@@ -16,6 +16,19 @@ public class RestaurantTest {
     }
 
     @Test
+    public void testAddReview() {
+        Restaurant restaurant = new Restaurant("Chili's","$$");
+        restaurant.addReview(new Review("I always leave negative reviews no matter what", 2, "Lonely And Angry"));
+        assertEquals("Should be 1", 1, restaurant.reviews.size());
+
+        restaurant.addReview(new Review("I want my babyback babyback babyback ribs.", 4, "Barbi Q. Sawsuh"));
+        assertEquals("Should be 2", 2, restaurant.reviews.size());
+
+        restaurant.addReview(new Review("Never actually been there but I know I wouldn't like it", 1, "John Smith"));
+        assertEquals("Should be 3", 3, restaurant.reviews.size());
+    }
+
+    @Test
     public void testUpdateRestaurantStars() {
         Restaurant restaurant = new Restaurant("Panera Bread", "$$");
         restaurant.updateRestaurantStars(5);
