@@ -63,13 +63,16 @@ public class RestaurantTest {
     @Test
     public void testTheaterToString() {
         Theater theater = new Theater("The Theatre");
-        assertEquals("Theater: The Theatre, Movies: []", "Theater: The Theatre, Movies: []", theater.toString());
+        assertEquals("Theater: The Theatre, Movies: []\n", "Theater: The Theatre, Movies: []\n", theater.toString());
 
         theater.addMovie("The Lord of the Rings III: The Return of the King");
-        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]", theater.toString());
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]\n", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]\n", theater.toString());
 
         theater.addMovie("The Lord of the Rings II: The Two Towers");
-        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]", theater.toString());
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\n", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\n", theater.toString());
+
+        theater.addReview(new Review("I like the popped corn", 5, "Orville Redenbacker"));
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\nReview: I like the popped corn, Star Rating: 5, Author: Orville Redenbacker\n", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\nReview: I like the popped corn, Star Rating: 5, Author: Orville Redenbacker\n", theater.toString());
     }
 
     @Test
@@ -106,14 +109,14 @@ public class RestaurantTest {
 
         theater.removeMovie("The Secret Life of Walter Mitty");
         assertEquals("Should be 2", 2, theater.currentlyShowingMovies.size());
-        assertFalse("Should be true", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertFalse("Should be false", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
         assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
         assertTrue("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
 
         theater.removeMovie("Being John Malkovich");
         assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
-        assertFalse("Should be true", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
-        assertFalse("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+        assertFalse("Should be false", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertFalse("Should be false", theater.currentlyShowingMovies.contains("Being John Malkovich"));
         assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
     }
 
