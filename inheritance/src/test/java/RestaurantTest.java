@@ -130,7 +130,23 @@ public class RestaurantTest {
         theater.addReview(new Review("The auditorium was too cold", 2, "Hector Warrior of Troy"));
         assertEquals("Should be 2", 2, theater.reviews.size());
 
-        theater.addReview(new Review("Wow", 2, "Owen Wilson"));
+        // Test the option for the user to add which movie they saw
+        theater.addReview(new Review("Wow", 2, "Owen Wilson", "Chocolat"));
         assertEquals("Should be 3", 3, theater.reviews.size());
+        assertEquals("Should be - Theater: AMC Lennox 24, Movies: []\nReview: The auditorium was too hot, Star Rating: 2, Author: Achilles Warrior of Greece\nReview: The auditorium was too cold, Star Rating: 2, Author: Hector Warrior of Troy\nReview: Wow, Star Rating: 2, Author: Owen Wilson, Movie: Chocolat\n", "Theater: AMC Lennox 24, Movies: []\nReview: The auditorium was too hot, Star Rating: 2, Author: Achilles Warrior of Greece\nReview: The auditorium was too cold, Star Rating: 2, Author: Hector Warrior of Troy\nReview: Wow, Star Rating: 2, Author: Owen Wilson, Movie: Chocolat\n", theater.toString());
+    }
+
+    @Test
+    public void testReviewConstructors() {
+        Theater theater = new Theater("AMC Dublin 18");
+        Theater theater2 = new Theater("AMC Dublin 18");
+
+        // Tests the Review constructor with movie as a parameter
+        theater.addReview(new Review("ZZZ ZZZ ZZZ", 1, "The Professor", "C-SPAN the Movie"));
+        assertEquals("Should be - Theater: AMC Dublin, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor, Movie: C-Span the Movie", "Theater: AMC Dublin 18, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor, Movie: C-SPAN the Movie\n", theater.toString());
+
+        // Tests the Review constructor without movie as a parameter
+        theater2.addReview(new Review("ZZZ ZZZ ZZZ", 1, "The Professor"));
+        assertEquals("Should be - Theater: AMC Dublin, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor", "Theater: AMC Dublin 18, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor\n", theater2.toString());
     }
 }

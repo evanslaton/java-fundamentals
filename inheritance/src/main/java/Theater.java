@@ -17,7 +17,7 @@ public class Theater implements ReviewableThings {
     public String toString() {
          String aboutTheater = "Theater: " + this.name + ", Movies: " + currentlyShowingMovies + "\n";
         for (Review review : this.reviews) {
-            aboutTheater += review.toString() + "\n";
+            aboutTheater += "Review: " + review.toString() + "\n";
         }
         return aboutTheater;
     }

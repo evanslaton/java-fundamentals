@@ -19,7 +19,7 @@ public class Shop implements ReviewableThings{
     public String toString() {
         String aboutShop = "Shop: " + this.name + ", Description: " + this.description + ", Price: " + this.price + "\n";
         for (Review review : this.reviews) {
-            aboutShop += review.toString() + "\n";
+            aboutShop += "Review: " + review.toString() + "\n";
         }
         return aboutShop;
     }

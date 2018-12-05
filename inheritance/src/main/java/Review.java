@@ -1,12 +1,4 @@
 public class Review {
-    public static void main(String[] args) {
-        Review review = new Review("yolo", 1000, "Evan");
-        System.out.println(review);
-
-        Review review2 = new Review("yolo", 1000, "Evan", "moo-v");
-        System.out.println(review2);
-    }
-
     // Instance properties
     private String body;
     private int stars;
