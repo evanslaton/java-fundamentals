@@ -41,17 +41,112 @@ public class RestaurantTest {
         assertEquals("Should be 2", 2, restaurant.rating);
     }
 
-
-    // Tests for Review class
+    // Tests for Shop class
     @Test
-    public void testReviewToString() {
-        Review review = new Review("This place is great!", 5, "John Smith");
-        assertEquals("Should be - Review: This place is great!, Star Rating: 5, Author: John Smith", "Review: This place is great!, Star Rating: 5, Author: John Smith", review.toString());
+    public void testShopToString() {
+        Shop shop = new Shop("Walmart", "If you want good service use the self-checkout", "$");
+        assertEquals("Should be - Shop: Walmart, Description: If you want good service use the self-checkout, Price: $", "Shop: Walmart, Description: If you want good service use the self-checkout, Price: $\n", shop.toString());
     }
 
     @Test
-    public void testReviewGetStars() {
-        Review review = new Review("This place is great!", 5, "John Smith");
-        assertEquals("Should be 5", 5, review.getStars());
+    public void testShopAddReview() {
+        Shop shop = new Shop("Forever 31", "Affordable fashion", "$$");
+
+        shop.addReview(new Review("Cheap", 2, "Dwayne Johnson"));
+        assertEquals("Should be - Shop: Forever 31, Description: Affordable fashion, Price: $$\nReview: Cheap, Star Rating: 2, Author: Dwayne Johnson\n", "Shop: Forever 31, Description: Affordable fashion, Price: $$\nReview: Cheap, Star Rating: 2, Author: Dwayne Johnson\n", shop.toString());
+
+        shop.addReview(new Review("It has everything I need", 5, "Rebel Wilson"));
+        assertEquals("Should be 2", 2, shop.reviews.size());
+    }
+
+    // Tests for Theater class
+    @Test
+    public void testTheaterToString() {
+        Theater theater = new Theater("The Theatre");
+        assertEquals("Theater: The Theatre, Movies: []\n", "Theater: The Theatre, Movies: []\n", theater.toString());
+
+        theater.addMovie("The Lord of the Rings III: The Return of the King");
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]\n", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]\n", theater.toString());
+
+        theater.addMovie("The Lord of the Rings II: The Two Towers");
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\n", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\n", theater.toString());
+
+        theater.addReview(new Review("I like the popped corn", 5, "Orville Redenbacker"));
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\nReview: I like the popped corn, Star Rating: 5, Author: Orville Redenbacker\n", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]\nReview: I like the popped corn, Star Rating: 5, Author: Orville Redenbacker\n", theater.toString());
+    }
+
+    @Test
+    public void testTheaterAddMovie() {
+        Theater theater = new Theater("Majestic");
+        theater.addMovie("Gorillas in the Mist");
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Gorillas in the Mist"));
+        assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
+        assertEquals("Should be Gorillas in the Mist", "Gorillas in the Mist", theater.currentlyShowingMovies.getFirst());
+
+        theater.addMovie("What\'s Eating Gilbert Grape");
+        int location = theater.currentlyShowingMovies.indexOf("What\'s Eating Gilbert Grape");
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("What\'s Eating Gilbert Grape"));
+        assertEquals("Should be 2", 2, theater.currentlyShowingMovies.size());
+        assertEquals("Should be What\'s Eating Gilbert Grape", "What\'s Eating Gilbert Grape", theater.currentlyShowingMovies.get(location));
+    }
+
+    @Test
+    public void testTheaterRemoveMovie() {
+        Theater theater = new Theater("AMC Lennox 24");
+        theater.addMovie("Avatar");
+        assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
+        theater.removeMovie("Avatar");
+        assertEquals("Should be 0", 0, theater.currentlyShowingMovies.size());
+
+        theater.addMovie("Napleon Dynamite");
+        theater.addMovie("The Secret Life of Walter Mitty");
+        theater.addMovie("Being John Malkovich");
+
+        assertEquals("Should be 3", 3, theater.currentlyShowingMovies.size());
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+
+        theater.removeMovie("The Secret Life of Walter Mitty");
+        assertEquals("Should be 2", 2, theater.currentlyShowingMovies.size());
+        assertFalse("Should be false", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+
+        theater.removeMovie("Being John Malkovich");
+        assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
+        assertFalse("Should be false", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertFalse("Should be false", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
+    }
+
+    @Test
+    public void testTheaterAddReview() {
+        Theater theater = new Theater("AMC Lennox 24");
+
+        theater.addReview(new Review("The auditorium was too hot", 2, "Achilles Warrior of Greece"));
+        assertEquals("Should be 1", 1, theater.reviews.size());
+
+        theater.addReview(new Review("The auditorium was too cold", 2, "Hector Warrior of Troy"));
+        assertEquals("Should be 2", 2, theater.reviews.size());
+
+        // Test the option for the user to add which movie they saw
+        theater.addReview(new Review("Wow", 2, "Owen Wilson", "Chocolat"));
+        assertEquals("Should be 3", 3, theater.reviews.size());
+        assertEquals("Should be - Theater: AMC Lennox 24, Movies: []\nReview: The auditorium was too hot, Star Rating: 2, Author: Achilles Warrior of Greece\nReview: The auditorium was too cold, Star Rating: 2, Author: Hector Warrior of Troy\nReview: Wow, Star Rating: 2, Author: Owen Wilson, Movie: Chocolat\n", "Theater: AMC Lennox 24, Movies: []\nReview: The auditorium was too hot, Star Rating: 2, Author: Achilles Warrior of Greece\nReview: The auditorium was too cold, Star Rating: 2, Author: Hector Warrior of Troy\nReview: Wow, Star Rating: 2, Author: Owen Wilson, Movie: Chocolat\n", theater.toString());
+    }
+
+    @Test
+    public void testReviewConstructors() {
+        Theater theater = new Theater("AMC Dublin 18");
+        Theater theater2 = new Theater("AMC Dublin 18");
+
+        // Tests the Review constructor with movie as a parameter
+        theater.addReview(new Review("ZZZ ZZZ ZZZ", 1, "The Professor", "C-SPAN the Movie"));
+        assertEquals("Should be - Theater: AMC Dublin, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor, Movie: C-Span the Movie", "Theater: AMC Dublin 18, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor, Movie: C-SPAN the Movie\n", theater.toString());
+
+        // Tests the Review constructor without movie as a parameter
+        theater2.addReview(new Review("ZZZ ZZZ ZZZ", 1, "The Professor"));
+        assertEquals("Should be - Theater: AMC Dublin, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor", "Theater: AMC Dublin 18, Movies: []\nReview: ZZZ ZZZ ZZZ, Star Rating: 1, Author: The Professor\n", theater2.toString());
     }
 }
