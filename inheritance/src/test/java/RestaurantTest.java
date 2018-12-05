@@ -42,16 +42,23 @@ public class RestaurantTest {
     }
 
 
-    // Tests for Review class
+    // Tests for Shop class
     @Test
-    public void testReviewToString() {
-        Review review = new Review("This place is great!", 5, "John Smith");
-        assertEquals("Should be - Review: This place is great!, Star Rating: 5, Author: John Smith", "Review: This place is great!, Star Rating: 5, Author: John Smith", review.toString());
+    public void testShopToString() {
+        Shop shop = new Shop("Walmart", "If you want good service use the self-checkout", "$");
+        assertEquals("Should be - Shop: Walmart, Description: If you want good service use the self-checkout, Price: $", "Shop: Walmart, Description: If you want good service use the self-checkout, Price: $\n", shop.toString());
     }
 
     @Test
-    public void testReviewGetStars() {
-        Review review = new Review("This place is great!", 5, "John Smith");
-        assertEquals("Should be 5", 5, review.getStars());
+    public void testShopAddReview() {
+        Shop shop = new Shop("Forever 31", "Affordable fashion", "$$");
+
+        shop.addReview(new Review("Cheap", 2, "Dwayne Johnson"));
+        assertEquals("Should be - Shop: Forever 31, Description: Affordable fashion, Price: $$\nReview: Cheap, Star Rating: 2, Author: Dwayne Johnson\n", "Shop: Forever 31, Description: Affordable fashion, Price: $$\nReview: Cheap, Star Rating: 2, Author: Dwayne Johnson\n", shop.toString());
+
+        shop.addReview(new Review("It has everything I need", 5, "Rebel Wilson"));
+        assertEquals("Should be 2", 2, shop.reviews.size());
     }
+
+
 }
