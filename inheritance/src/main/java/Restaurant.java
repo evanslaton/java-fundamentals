@@ -31,7 +31,7 @@ public class Restaurant implements ReviewableThings {
             ratings = String.valueOf(this.rating);
         }
         String aboutRestaurant = "Name: " + this.name + ", Star Rating: " + ratings + ", Price Category: " + this.priceCategory + "\n";
-        for (Review review : reviews) {
+        for (Review review : this.reviews) {
             aboutRestaurant += review.toString() + "\n";
         }
         return aboutRestaurant;

@@ -41,7 +41,6 @@ public class RestaurantTest {
         assertEquals("Should be 2", 2, restaurant.rating);
     }
 
-
     // Tests for Shop class
     @Test
     public void testShopToString() {
@@ -60,5 +59,75 @@ public class RestaurantTest {
         assertEquals("Should be 2", 2, shop.reviews.size());
     }
 
+    // Tests for Theater class
+    @Test
+    public void testTheaterToString() {
+        Theater theater = new Theater("The Theatre");
+        assertEquals("Theater: The Theatre, Movies: []", "Theater: The Theatre, Movies: []", theater.toString());
 
+        theater.addMovie("The Lord of the Rings III: The Return of the King");
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King]", theater.toString());
+
+        theater.addMovie("The Lord of the Rings II: The Two Towers");
+        assertEquals("Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]", "Theater: The Theatre, Movies: [The Lord of the Rings III: The Return of the King, The Lord of the Rings II: The Two Towers]", theater.toString());
+    }
+
+    @Test
+    public void testTheaterAddMovie() {
+        Theater theater = new Theater("Majestic");
+        theater.addMovie("Gorillas in the Mist");
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Gorillas in the Mist"));
+        assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
+        assertEquals("Should be Gorillas in the Mist", "Gorillas in the Mist", theater.currentlyShowingMovies.getFirst());
+
+        theater.addMovie("What\'s Eating Gilbert Grape");
+        int location = theater.currentlyShowingMovies.indexOf("What\'s Eating Gilbert Grape");
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("What\'s Eating Gilbert Grape"));
+        assertEquals("Should be 2", 2, theater.currentlyShowingMovies.size());
+        assertEquals("Should be What\'s Eating Gilbert Grape", "What\'s Eating Gilbert Grape", theater.currentlyShowingMovies.get(location));
+    }
+
+    @Test
+    public void testTheaterRemoveMovie() {
+        Theater theater = new Theater("AMC Lennox 24");
+        theater.addMovie("Avatar");
+        assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
+        theater.removeMovie("Avatar");
+        assertEquals("Should be 0", 0, theater.currentlyShowingMovies.size());
+
+        theater.addMovie("Napleon Dynamite");
+        theater.addMovie("The Secret Life of Walter Mitty");
+        theater.addMovie("Being John Malkovich");
+
+        assertEquals("Should be 3", 3, theater.currentlyShowingMovies.size());
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+
+        theater.removeMovie("The Secret Life of Walter Mitty");
+        assertEquals("Should be 2", 2, theater.currentlyShowingMovies.size());
+        assertFalse("Should be true", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+
+        theater.removeMovie("Being John Malkovich");
+        assertEquals("Should be 1", 1, theater.currentlyShowingMovies.size());
+        assertFalse("Should be true", theater.currentlyShowingMovies.contains("The Secret Life of Walter Mitty"));
+        assertFalse("Should be true", theater.currentlyShowingMovies.contains("Being John Malkovich"));
+        assertTrue("Should be true", theater.currentlyShowingMovies.contains("Napleon Dynamite"));
+    }
+
+    @Test
+    public void testTheaterAddReview() {
+        Theater theater = new Theater("AMC Lennox 24");
+
+        theater.addReview(new Review("The auditorium was too hot", 2, "Achilles Warrior of Greece"));
+        assertEquals("Should be 1", 1, theater.reviews.size());
+
+        theater.addReview(new Review("The auditorium was too cold", 2, "Hector Warrior of Troy"));
+        assertEquals("Should be 2", 2, theater.reviews.size());
+
+        theater.addReview(new Review("Wow", 2, "Owen Wilson"));
+        assertEquals("Should be 3", 3, theater.reviews.size());
+    }
 }

@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Shop {
+public class Shop implements ReviewableThings{
     // Instance properties
     private String name;
     private String description;
@@ -15,10 +15,10 @@ public class Shop {
         this.reviews = new LinkedList();
     }
 
-    // Returns a string with this instance of the Review's info
+    // Returns a string with this instance of the Shop's info
     public String toString() {
         String aboutShop = "Shop: " + this.name + ", Description: " + this.description + ", Price: " + this.price + "\n";
-        for (Review review : reviews) {
+        for (Review review : this.reviews) {
             aboutShop += review.toString() + "\n";
         }
         return aboutShop;
